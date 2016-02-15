@@ -55,7 +55,7 @@ before_script:
 # required packages without getting stuck on a confirmation prompt.
 script:
   - raco make 1.2/solution.rkt
-  - raco test 1.2/text.rkt
+  - raco 1.2/text.rkt
 
 # NOTE: If your repo is a Racket package with an info.rkt that
 # includes some `deps`, the following is more elegant:
