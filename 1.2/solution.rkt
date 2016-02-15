@@ -8,4 +8,5 @@
               (+ (* b b) (* c c)))
 )
 
+
 (provide solution)
