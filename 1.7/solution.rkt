@@ -19,7 +19,4 @@
         guess
         (sqrt-iter (improve guess x) x)))
 
-(sqrt-iter 1.0 9)
-3.00009155413138
-
 (provide sqrt-iter)
