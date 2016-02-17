@@ -1,3 +1,5 @@
+#lang racket/base
+
 (define (average x y)
     (/ (+ x y) 2))
 
@@ -14,9 +16,9 @@
 (define (good-enough? guess old-guess)
     (< (abs (/ (- guess old-guess) old-guess)) 0.0001))
 
-(define (sqrt-iter guess x)
+(define (solution guess x)
     (if (good-enough? (improve guess x) guess)
         guess
-        (sqrt-iter (improve guess x) x)))
+        (solution (improve guess x) x)))
 
-(provide sqrt-iter)
+(provide solution)
