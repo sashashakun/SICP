@@ -1,5 +1,5 @@
 #lang racket/base
 
-(require rackunit "1.2.rkt")
+(require rackunit "solution.rkt")
 
-(check-equal? (solution 1 2 3) 13 (printf "Simple test"))
+(check-equal? (solution 1 2 3) 13 (printf "test 1.2 passed"))

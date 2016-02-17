@@ -23,9 +23,9 @@ env:
     #
     # The RELEASE snapshot is only available during the release process.
     - RACKET_VERSION=6.3
-    - RACKET_VERSION=HEAD
-    - RACKET_VERSION=SCOPE_SNAPSHOT
-    - RACKET_VERSION=RELEASE
+    #- RACKET_VERSION=HEAD
+    #- RACKET_VERSION=SCOPE_SNAPSHOT
+    #- RACKET_VERSION=RELEASE
 
 # You may want to test against certain versions of Racket, without
 # having them count against the overall success/failure.
@@ -53,9 +53,14 @@ before_script:
 #
 # Tip: Use `raco pkg install --deps search-auto <pkg>` to install any
 # required packages without getting stuck on a confirmation prompt.
+
+
+# TODO make testing workflow
 script:
   - raco make 1.2/solution.rkt
+  - raco make 1.7/solution.rkt
   - raco test 1.2/solution.rkt
+  - raco test 1.7/solution.rkt
 
 # NOTE: If your repo is a Racket package with an info.rkt that
 # includes some `deps`, the following is more elegant:
