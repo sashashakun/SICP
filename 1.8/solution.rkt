@@ -19,6 +19,6 @@
 (define (solution guess x)
     (if (good-enough? (improve guess x) guess)
         guess
-        (sqrt-iter (improve guess x) x)))
+        (solution (improve guess x) x)))
 
 (provide solution)
