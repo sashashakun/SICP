@@ -13,7 +13,7 @@
             (- 2 7)
           )
         )
-)
+))
 
 
 (provide solution)
