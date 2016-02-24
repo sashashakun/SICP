@@ -59,6 +59,8 @@ before_script:
 script:
   - raco make 1.2/solution.rkt
   - raco test 1.2/solution.rkt
+  - raco make 1.3/solution.rkt
+  - raco test 1.3/solution.rkt
   - raco make 1.7/solution.rkt
   - raco test 1.7/solution.rkt
   - raco make 1.8/solution.rkt
