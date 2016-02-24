@@ -1,11 +1,18 @@
 #lang racket/base
 
-(define (solution a b c)
-          (if (> a b)
-              (if (> b c)
-                  (+ (* a a) (* b b))
-                  (+ (* a a) (* c c)))
-              (+ (* b b) (* c c)))
+(define (solution)
+        (/
+          (+
+            4
+            5
+            (- 2 (- 3 (+ 6 0.8))
+          )
+          (*
+            3
+            (- 6 2)
+            (- 2 7)
+          )
+        )
 )
 
 

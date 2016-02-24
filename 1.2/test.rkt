@@ -2,4 +2,4 @@
 
 (require rackunit "solution.rkt")
 
-(check-equal? (solution 1 2 3) 13 (printf "test 1.2 passed"))
+(check-equal? (solution) -0.24666666666666667	(printf "test 1.2 passed"))
