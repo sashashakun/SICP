@@ -65,6 +65,8 @@ script:
   - raco test src/chapter1/1.7/solution.rkt
   - raco make src/chapter1/1.8/solution.rkt
   - raco test src/chapter1/1.8/solution.rkt
+  - raco make src/chapter1/1.10/solution.rkt
+  - raco test src/chapter1/1.10/solution.rkt
 
 # NOTE: If your repo is a Racket package with an info.rkt that
 # includes some `deps`, the following is more elegant:
