@@ -1,5 +1,5 @@
 # SICP
-Solving [SICP](https://mitpress.mit.edu/sicp/) tasks in [Racket](https://racket-lang.org/)
+[SICP](https://mitpress.mit.edu/sicp/) tasks implementation in [Racket](https://racket-lang.org/)
 
 
 ![SICP](https://faisalpp.files.wordpress.com/2015/02/sicp.gif)
