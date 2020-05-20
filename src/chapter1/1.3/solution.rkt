@@ -1,12 +1,16 @@
 #lang racket/base
 
+(define (squaresum a b) 
+        (+ (* a a) (* b b)))
+
 (define (solution a b c)
           (if (> a b)
-              (if (> b c)
-                  (+ (* a a) (* b b))
-                  (+ (* a a) (* c c)))
-              (+ (* b b) (* c c)))
-)
-
+                (if (> b c)
+                    (squaresum a b)
+                    (squaresum a c))
+                (if (> a c)
+                    (squaresum a b)
+                    (squaresum b c))
+                ))
 
 (provide solution)
